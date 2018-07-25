@@ -228,7 +228,7 @@ function setBoard(){
     mainDeck.removeChild(mainDeck.firstChild);
   }
   //shuffle the cards
-  var shuffledCardList = cardList;//shuffle(cardList);
+  var shuffledCardList = shuffle(cardList);
 
   //Loop through shuffledCardList and create html
   for (var i = 0; i < shuffledCardList.length; i++) {
