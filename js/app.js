@@ -1,11 +1,8 @@
 
 // List of all cards
-var cardList = ["fa fa-diamond", "fa fa-diamond", "fa fa-paper-plane-o",
-"fa fa-paper-plane-o", "fa fa-bicycle", "fa fa-bicycle",
-"fa fa-bomb", "fa fa-bomb", "fa fa-anchor", "fa fa-anchor",
-"fa fa-bolt", "fa fa-bolt", "fa fa-cube", "fa fa-cube",
-"fa fa-leaf", "fa fa-leaf"];
-
+const singleCardList = ['fa fa-diamond','fa fa-paper-plane-o','fa fa-bicycle',
+'fa fa-bomb', 'fa fa-anchor', 'fa fa-bolt', 'fa fa-cube','fa fa-leaf'];
+const cardList = singleCardList.concat(singleCardList);
 //access the deck
 var mainDeck = document.getElementById('deck');
 var body = document.getElementsByTagName('BODY')[0];
